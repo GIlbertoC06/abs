@@ -5,14 +5,17 @@ const Counter = () => {
 
     const countHandler = () => {
         setCount(count + 1)
-        setCount(count - 1)
+    
     };
-
+    const countHandler2 = () => {
+        setCount(count - count)
+    
+    };
     return(
         <div>
             <h1>{count}</h1>
-            <button onClick={countHandler}> +1 </button>
-            <button onClick={countHandler}> -1 </button>
+            <button onClick={countHandler}> + </button>
+            <button onClick={countHandler2}> - </button>
         </div>
     )
 };
